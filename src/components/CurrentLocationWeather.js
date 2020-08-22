@@ -72,17 +72,23 @@ function CurrentLocationWeather() {
 
     return (
         <div className='currentLocationWeather-box'>
-            <img src={weatherImg} alt="weather photo" />
-            <div className='currentLocationWeather-box__container'>
-              <div className='currentLocationWeather-box__container-location'>
-                <h1>{getDay()}</h1>
+          <div className='widget'>
+            <div>
+            <div className='details'>
+              <div className='summary'>
+                <h1 >{getDay()}</h1>
+                <p className='temperature'>{temp.toFixed(0)}°C</p>
                 <h2>{currentWeather.name}</h2>
               </div>
-              <div className='currentLocationWeather-box__container-temp'>
-                <p className='weatherTemp'>{temp.toFixed(0)}°C</p>
                 <p>{currentWeather.description}</p>
                 <p>Min:{temp_min.toFixed(0)}°C Max: {temp_max.toFixed(0)}°C</p>
+              <div className='currentLocationWeather-box__container-temp'>
               </div>
+            </div>
+            </div>
+            <div className='img-container'> 
+            <img src={weatherImg} alt="weather photo" />
+            </div>
             </div>
         </div>
     )

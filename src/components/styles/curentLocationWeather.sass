@@ -1,47 +1,52 @@
+$bahamas: #3cc0fe;
+$capetown: #27a5fd;
+$cabo: #0066ff;
+$capetownShadow: rgba($capetown, 0.4);
+$svalbard: #d2e9fa;
+$cayucos: #9cd0ff;
+    
+    
 .currentLocationWeather-box
-    width: 30em
-    height: 20em
-    margin-top: 20px
-    display: flex
-    justify-content: center
-    align-items: center
-    border: 1px solid black
-    border-radius: 5px
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
 
-.currentLocationWeather-box__container
-    margin-left: 20px
-    padding: 10px
-    border: 1px solid black
-    h2
-        margin: 10px 0 0 0
-    h1
-        margin: 0
-
-.currentLocationWeather-box__container-location
-    border: 1px solid black
+.widget
+    background: linear-gradient(to bottom right, $bahamas 20%, $cabo);
+    width: 900px;
+    height: auto
+    border-radius: 6px;
+    box-shadow: 0px 60px 80px -20px $capetownShadow;
+    color: $svalbard;
+    font-size: 2em;
+    font-weight: 300;
     display: flex
-    justify-content: center
-    align-items: center
-    flex-direction: column
-    padding: 0
 
-.currentLocationWeather-box__container-temp
-    display: flex
-    justify-content: flex-start
-    align-items: flex-start
-    flex-direction: column
-    padding: 0
+.details
+    font-family: Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 60px;
+
+.temperature
+    color: white;
+    font-weight: 300;
+    font-size: 5em;
     margin: 0
-    p
-        margin: 0.25em
-        border: 1px solid black
-    &:first-child
-        
 
-.weatherTemp
-    font-size: 2em
-    width: 100%
+.summary
+    width: 260px;
+    margin-top: -16px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid $cayucos;
+
+.img-container
+    display: flex
     align-self: center
-    justify-self: center
-    text-align: center
-    font-weight: bolder
+    flex-grow: 1
+    img
+        margin: 0 auto
+        width: 200px
+        height: 200px

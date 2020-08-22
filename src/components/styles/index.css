@@ -1,8 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
 .currentLocationWeather-box {
-  width: 30em;
-  height: 20em;
-  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,81 +9,73 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid black;
-  border-radius: 5px;
+  height: 98vh;
 }
 
-.currentLocationWeather-box__container {
-  margin-left: 20px;
-  padding: 10px;
-  border: 1px solid black;
-}
-
-.currentLocationWeather-box__container h2 {
-  margin: 10px 0 0 0;
-}
-
-.currentLocationWeather-box__container h1 {
-  margin: 0;
-}
-
-.currentLocationWeather-box__container-location {
-  border: 1px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 0;
-}
-
-.currentLocationWeather-box__container-temp {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 0;
-  margin: 0;
-}
-
-.currentLocationWeather-box__container-temp p {
-  margin: 0.25em;
-  border: 1px solid black;
-}
-
-.weatherTemp {
+.widget {
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(20%, #3cc0fe), to(#0066ff));
+  background: linear-gradient(to bottom right, #3cc0fe 20%, #0066ff);
+  width: 900px;
+  height: auto;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 60px 80px -20px rgba(39, 165, 253, 0.4);
+          box-shadow: 0px 60px 80px -20px rgba(39, 165, 253, 0.4);
+  color: #d2e9fa;
   font-size: 2em;
-  width: 100%;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.details {
+  font-family: Roboto, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 30px;
+  margin-left: 60px;
+}
+
+.temperature {
+  color: white;
+  font-weight: 300;
+  font-size: 5em;
+  margin: 0;
+}
+
+.summary {
+  width: 260px;
+  margin-top: -16px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #9cd0ff;
+}
+
+.img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  text-align: center;
-  font-weight: bolder;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.img-container img {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
 }
 
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -101,6 +90,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: #CEF;
 }
 
 .root {
