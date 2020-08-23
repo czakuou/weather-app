@@ -12,16 +12,19 @@ $cayucos: #9cd0ff;
     align-items: center;
     height: 98vh;
 
+
 .widget
     background: linear-gradient(to bottom right, $bahamas 20%, $cabo);
-    width: 900px;
+    width: auto;
     height: auto
     border-radius: 6px;
     box-shadow: 0px 60px 80px -20px $capetownShadow;
     color: $svalbard;
-    font-size: 2em;
+    font-size: 1rem;
     font-weight: 300;
     display: flex
+    @media screen and ( max-width: 900px )
+        flex-direction: column
 
 .details
     font-family: Roboto, sans-serif;

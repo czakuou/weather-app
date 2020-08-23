@@ -15,17 +15,26 @@
 .widget {
   background: -webkit-gradient(linear, left top, right bottom, color-stop(20%, #3cc0fe), to(#0066ff));
   background: linear-gradient(to bottom right, #3cc0fe 20%, #0066ff);
-  width: 900px;
+  width: auto;
   height: auto;
   border-radius: 6px;
   -webkit-box-shadow: 0px 60px 80px -20px rgba(39, 165, 253, 0.4);
           box-shadow: 0px 60px 80px -20px rgba(39, 165, 253, 0.4);
   color: #d2e9fa;
-  font-size: 2em;
+  font-size: 1rem;
   font-weight: 300;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 900px) {
+  .widget {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .details {
